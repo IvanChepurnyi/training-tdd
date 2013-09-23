@@ -17,6 +17,7 @@ Vagrant.configure("2") do |config|
      vb.customize ["modifyvm", :id, "--memory", "1024", "--cpus", "2", "--pae", "on", "--hwvirtex", "on"]
     end
 
+    dev_config.vm.provision "shell", path: "setup-guest.sh"
     dev_config.hostmanager.aliases = %w(training-tdd.dev www.training-tdd.dev)
   end
 
