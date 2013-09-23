@@ -9,15 +9,15 @@ Vagrant.configure("2") do |config|
 
   config.vm.define :dev do |dev_config|
     dev_config.vm.hostname = "training-tdd-box"
-    dev_config.vm.box = "precise32"
+    dev_config.vm.box = "training"
     dev_config.vm.network :private_network, ip: "10.11.12.18"
     dev_config.vm.synced_folder ".", "/vagrant", :nfs => true
 
     dev_config.vm.provider :virtualbox do |vb|
-     vb.customize ["modifyvm", :id, "--memory", "1024"]
+     vb.customize ["modifyvm", :id, "--memory", "1024", "--cpus", "2", "--pae", "on", "--hwvirtex", "on"]
     end
 
-    dev_config.hostmanager.aliases = %w(tdd.dev www.tdd.dev)
+    dev_config.hostmanager.aliases = %w(training-tdd.dev www.training-tdd.dev)
   end
 
 
