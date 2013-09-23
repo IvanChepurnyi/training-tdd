@@ -1,0 +1,6 @@
+
+magento/
+.vagrant/
+*.box
+composer.lock
+bin/
