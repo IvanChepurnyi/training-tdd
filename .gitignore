@@ -1,4 +1,4 @@
-
+vendor/
 magento/
 .vagrant/
 *.box
