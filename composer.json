@@ -1,0 +1,8 @@
+{
+    "require": {
+        "ecomdev/mage-ci": "*"
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
