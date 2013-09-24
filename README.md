@@ -10,18 +10,12 @@ System Requirements
 Installation
 ------------
 
-1. Initialize the host by the following command
+Initialize the host by the following command
 
-  ```bash
-  bash setup-host.sh
-  ```
+```bash
+bash setup-host.sh
+```
 
-2. Login to guest machine and run the following commands
-
-  ```bash
-  cd /vagrant
-  bash setup-guest.sh
-  ```
 
 After the following steps, you will receive a fully ready environment with phpunit, magento and EcomDev_PHPUnit extension installed.
 
