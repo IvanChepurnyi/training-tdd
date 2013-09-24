@@ -1,2 +1,2 @@
-src/app/etc/modules/*.xml app/etc/modules
-src/app/code/local/Tdd/*   app/code/local/Tdd
+app/etc/modules      src/app/etc/modules/*.xml
+app/code/local/Tdd   src/app/code/local/Tdd/*
